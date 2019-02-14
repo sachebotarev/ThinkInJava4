@@ -9,10 +9,7 @@ interface Selector {
 class StringLine{
     private String s = "Привет из StringLine";
 
-    @Override
-    public String toString() {
-        return s;
-    }
+    public String toString() {return s;}
 }
 
 public class Sequence {
@@ -41,6 +38,7 @@ public class Sequence {
     public Selector selector() {
         return new SequenceSelector();
     }
+
 
     public static void main(String[] args) {
         Sequence sequence = new Sequence(10);
